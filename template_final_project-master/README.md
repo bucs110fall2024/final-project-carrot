@@ -1,7 +1,7 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
+# Finance Map
 ## CS110 Final Project  << Semester, Year >>
 
 ## Team Members
