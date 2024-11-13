@@ -2,7 +2,7 @@
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
 # Finance Map
-## CS110 Final Project  << Semester, Year >>
+## CS110 Final Project  << Semester 1, 2024 >>
 
 ## Team Members
 
@@ -12,7 +12,7 @@ Fiyaz Ferdouse
 
 ## Project Description
 
-<< Give an overview of your project >>
+My project will be an interactive map of the United States of America that provides the locations of various companies and provides information on these companies, including CEO, stock price, value, etc.
 
 ***    
 
@@ -30,11 +30,11 @@ Fiyaz Ferdouse
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. The map of the USA (possibly with Alaska and Hawaii for fun)
+2. Nodes atop the locations with the headquarters of the companies that I want to include
+3. Basic information on the included companies
+4. A way to keep track of the real time stock price of the companies
+5. A creative way to incorporate the links of the websites of the companies
 
 ### Classes
 
