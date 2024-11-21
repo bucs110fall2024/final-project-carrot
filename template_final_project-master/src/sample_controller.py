@@ -1,33 +1,38 @@
+import pygame
 
-# class Controller:
+class Controller:
   
 #   def __init__(self):
-#     #setup pygame data
+    #setup pygame data
     
-#   def mainloop(self):
-#     #select state loop
-    
+  def mainloop(self):
+    while(True): #this can also be a variable instead of just True
+      #1. Handle events
+      for event in pygame.event.get():
+           if event.type == pygame.QUIT:
+               pygame.quit()
+               exit()
   
-#   ### below are some sample loop states ###
+  ### below are some sample loop states ###
 
 #   def menuloop(self):
     
-#       #event loop
+      #event loop
 
-#       #update data
+      #update data
 
-#       #redraw
+      #redraw
       
 #   def gameloop(self):
-#       #event loop
+      #event loop
 
-#       #update data
+      #update data
 
-#       #redraw
+      #redraw
     
 #   def gameoverloop(self):
-#       #event loop
+      #event loop
 
-#       #update data
+      #update data
 
-#       #redraw
+      #redraw
