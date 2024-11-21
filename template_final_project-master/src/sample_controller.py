@@ -12,6 +12,10 @@ class Controller:
            if event.type == pygame.QUIT:
                pygame.quit()
                exit()
+      #2. Detect clicks 
+      
+      #3. Open and close windows
+      pygame.display.flip()
   
   ### below are some sample loop states ###
 
