@@ -1,4 +1,4 @@
-import CompanyInfo
+from companyInfo import CompanyInfo
 
 class Node:
     def __init__(self, x, y, companyName, companyLogo):
