@@ -66,8 +66,8 @@ Controller
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | hover over node      | node becomes highlighted and      |
-|                      |                      | state and population are shown    |
+|  1                   | hover over node      | node becomes highlighted and state and population are shown     |
+|                      |                      |     |
 |                      |                      |                                   |
 |  2                   | hover over 2 nodes   | only one node becomes             |
 |                      |                      | highlighted                       |
