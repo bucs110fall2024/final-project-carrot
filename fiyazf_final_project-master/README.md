@@ -47,6 +47,7 @@ CompanyInfo
     - uses yfinance to return stock information on the company
     - use of a json dictionary to provide file paths to the 'companies' folder in assets in order to retrieve information on the company
     - also can create a path to the logo file for the company
+    - uses wikipedia module to give just a little bit more information
 
 StateInfo
     - given the name of a state, it will use the censusdata module to connect to an API to return the population of the state
@@ -58,11 +59,26 @@ Controller
 ### External Modules Used
     - yFinance: in order to retrieve stock information
     - censusData: in order to retrieve information on the populations of US states
+    - wikipedia: provides a little bit of context on the company, albeit not a whole lot
 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  | GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+|  1                   | hover over node      | node becomes highlighted and      |
+|                      |                      | state and population are shown    |
+|                      |                      |                                   |
+|  2                   | hover over 2 nodes   | only one node becomes             |
+|                      |                      | highlighted                       |
+|                      |                      |                                   |
+|  3                   | click node           | information is displayed to the   |
+|                      |                      | right                             |
+|                      |                      |                                   |
+|  4                   | click off node       | information is removed from the   |
+|                      |                      | right                             |
+|                      |                      |                                   |
+|  5                   | press left and       | the information for the companies |
+|                      | right arrow keys     | switches to the next one          |
+
+
+
