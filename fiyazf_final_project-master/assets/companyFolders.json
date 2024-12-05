@@ -1,0 +1,20 @@
+{
+    "GS": "assets/companies/goldmanSachs",
+    "JPM": "assets/companies/jpMorgan",
+    "C": "assets/companies/citiBank",
+    "BLK": "assets/companies/blackRock",
+    "MS": "assets/companies/morganStanley",
+    "BK": "assets/companies/bankOfNewYork",
+    "SNEX": "assets/companies/stoneX",
+    "STT": "assets/companies/stateStreet",
+    "FNF": "assets/companies/fidelity",
+    "CGHC": "assets/companies/capital",
+    "PHK": "assets/companies/pimco",
+    "BEN": "assets/companies/franklinResources",
+    "VTI": "assets/companies/vanguard",
+    "JNSXX": "assets/companies/edwardJones",
+    "IVZ": "assets/companies/invesco",
+    "BAC": "assets/companies/bankOfAmerica",
+    "TSTRX": "assets/companies/transamerica",
+    "WFC": "assets/companies/wellsFargo"
+    }
