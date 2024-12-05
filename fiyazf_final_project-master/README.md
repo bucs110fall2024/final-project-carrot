@@ -33,6 +33,7 @@ My project is an interactive map of the United States of America that focuses on
 3. Basic information on the included companies, such as CEO, headquarters address, and year founded
 4. A way to keep track of the real time stock price of the companies
 5. Images of the logos of the companies
+6. I created all of the art myself (apart from the logos of course)
 
 ### Classes
 

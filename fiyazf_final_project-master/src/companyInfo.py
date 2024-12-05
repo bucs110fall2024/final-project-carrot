@@ -114,4 +114,4 @@ class CompanyInfo:
     def wikiOfCompany(self):
         query = CompanyInfo.name(self) + " finance"
         wikiSummary = wikipedia.summary(query, 5, 5)
-        return (wikiSummary [:98] + "...")
+        return (wikiSummary [:96] + "...")
