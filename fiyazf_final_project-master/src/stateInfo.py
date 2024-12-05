@@ -3,6 +3,11 @@ import censusdata
 
 class StateInfo:
     def __init__(self, state):
+        """
+        Given a state, it will use an api and a dictionary to return population and GDP information
+        Args:
+            state (string): name of a state
+        """
         self.apiKey = 'cb9ca5d419e6459b5325c1b345707eb089a69540'
         
         self.state = state
@@ -20,6 +25,9 @@ class StateInfo:
         }
         
     def population(self):
+        """
+        Uses an API to get the population information of the state (albeit from 2020)
+        """
         stateData = self.stateData.get(self.state)
         stateFip = stateData['fip']
         
@@ -30,6 +38,9 @@ class StateInfo:
         return(f"Population (as of 2020): {self.population}")
     
     def gdp(self):
+        """
+        Uses the created dictionary to get the GDP of each state
+        """
         stateData = self.stateData.get(self.state)
         self.gdp = stateData['gdp']
         return(f"Approximated GDP (2024): {self.gdp}")

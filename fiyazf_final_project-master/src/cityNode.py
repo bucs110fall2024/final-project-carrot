@@ -3,10 +3,11 @@ import pygame
 class CityNode:
     def __init__(self, x, y, state):
         """
-        Creates a node at (x, y)
+        initializes the values and actions for a node at (x, y) and assigns it a state
         Args:
             x (int): x coord
             y (int): y coord
+            state (string): the state which the node is for
         Returns: none
         """
 
@@ -28,10 +29,30 @@ class CityNode:
         }
 
     def createNode(self, screen):
+        """
+        creates the node on the display
+        Args:
+            screen (pygame.Surface): the display on which the node is created
+        """
         screen.blit(self.imageCurrent, self.rect.topleft)
         
     def nodeClicked(self, mousePos):
+        """
+        checks whether or not the node has been clicked
+        Args:
+            mousePos (tuple): is the coordinates of the mouse cursor
+        Returns:
+            boole: True if mouse hovers over node, false if not
+        """
         return self.rect.collidepoint(mousePos)
     
     def tickersByState(self, state):
+        """
+        returns the list of ticker values of companies within a state using the dictionary in the initialization
+        Args:
+            state (string): the state from which the ticker values will be taken
+
+        Returns:
+            list: the list of ticker values of the companies within the state
+        """
         return self.stateCompaniesDict.get(state, [])

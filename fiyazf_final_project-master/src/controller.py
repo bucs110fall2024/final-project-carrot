@@ -5,6 +5,9 @@ from src.companyInfo import CompanyInfo
 
 class Controller:
       def __init__(self):
+            """
+            is the controller for the whole thing to run
+            """
             pygame.init()
             self.display = pygame.display.set_mode((1280, 720))
             pygame.display.set_caption("United State Financial Services Company Map")
@@ -52,7 +55,17 @@ class Controller:
             self.currentCompanyIndex = 0
             
       def mainloop(self):
+            """
+            is the mainloop for the program to run and redraw
+            """
             def displayText(text, coordinates, fontSize):
+                  """
+                  makes it easier to displayText on screen by compacting it in one function
+                  Args:
+                      text (string): the text to be shown on screen
+                      coordinates (tuple): contains the x and y coordinates for the text to be placed
+                      fontSize (integer): desired size of the text to be displayed
+                  """
                   font = pygame.font.Font(self.regularFont, fontSize)
                   font.set_bold(True)
                   toRender = font.render(text, True, (255, 255, 255))
