@@ -67,19 +67,10 @@ Controller
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | hover over node      | node becomes highlighted and state and population are shown     |
-|                      |                      |     |
-|                      |                      |                                   |
-|  2                   | hover over 2 nodes   | only one node becomes             |
-|                      |                      | highlighted                       |
-|                      |                      |                                   |
-|  3                   | click node           | information is displayed to the   |
-|                      |                      | right                             |
-|                      |                      |                                   |
-|  4                   | click off node       | information is removed from the   |
-|                      |                      | right                             |
-|                      |                      |                                   |
-|  5                   | press left and       | the information for the companies |
-|                      | right arrow keys     | switches to the next one          |
+|  2                   | hover over 2 nodes   | only one node becomes highlighted            |
+|  3                   | click node           | information is displayed to the right  |
+|  4                   | click off node       | information is removed from the right  |
+|  5                   | press left and right arrow keys      | the information for the companies switches to the next company in the index, with the index either going +1 or -1|
 
 
 
