@@ -2,3 +2,4 @@ CEO: Larry Fink
 Headquarters: 50 Hudson Yards, New York, NY
 Founded: 1988
 Revenue: $19.3 billion (2024)
+Company: BlackRock

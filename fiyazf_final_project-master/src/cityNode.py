@@ -15,9 +15,23 @@ class CityNode:
         self.imageHovered = pygame.image.load('assets/city_node_highlighted.png')
         self.imageCurrent = self.imageNormal
         self.state = state
+        self.stateCompaniesDict = {
+            "New York": ["GS", "JPM", "C", "BLK", "MS", "BK", "SNEX"],
+            "Massachusetts": ["STT", "FNF"],
+            "California": ["CGHC", "PHK", "BEN"],
+            "Pennsylvania": ["VTI"],
+            "Missouri": ["JNSXX"],
+            "Georgia": ["IVZ"],
+            "North Carolina": ["BAC"],
+            "Iowa": ["TSTRX"],
+            "South Dakota": ["WFC"],
+        }
 
     def createNode(self, screen):
         screen.blit(self.imageCurrent, self.rect.topleft)
         
     def nodeClicked(self, mousePos):
         return self.rect.collidepoint(mousePos)
+    
+    def tickersByState(self, state):
+        return self.stateCompaniesDict.get(state, [])

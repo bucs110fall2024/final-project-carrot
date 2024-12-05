@@ -2,3 +2,4 @@ CEO: Jamie Dimon
 Headquarters: 383 Madison Avenue, New York, NY
 Founded: 1799 
 Revenue: $173.4 billion (2024)
+Company: JP Morgan Chase
