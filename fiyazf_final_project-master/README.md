@@ -1,8 +1,6 @@
+# Interactive United States Financial Services Company Map
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
-
-# Finance Map
-## CS110 Final Project  << Semester 1, 2024 >>
+## CS110 Final Project Semester 1, 2024
 
 ## Team Members
 
@@ -12,7 +10,7 @@ Fiyaz Ferdouse
 
 ## Project Description
 
-My project will be an interactive map of the United States of America that provides the locations of various companies and provides information on these companies, including CEO, stock price, value, etc.
+My project is an interactive map of the United States of America that focuses on states that house some of the top companies in financial services and asset management, providing users with information on these companies.
 
 ***    
 
@@ -31,19 +29,40 @@ My project will be an interactive map of the United States of America that provi
 ### Features
 
 1. The map of the USA (possibly with Alaska and Hawaii for fun)
-2. Nodes atop the locations with the headquarters of the companies that I want to include
-3. Basic information on the included companies
+2. Nodes atop states with the headquarters of some of the top financial services companies in America
+3. Basic information on the included companies, such as CEO, headquarters address, and year founded
 4. A way to keep track of the real time stock price of the companies
-5. A creative way to incorporate the links of the websites of the companies
+5. Images of the logos of the companies
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+CityNode
+    - this initializes the images used to create the little node with a city icon, assigns a state to the node
+    - with this initizalization, the node can be placed at a coordinate
+    - it can detect when it is clicked, returning a boolean value
+    - uses a dictionary to return a list of the ticker symbols from all companies recorded for the state
+
+CompanyInfo
+    - uses a given ticker symbol in order to retrieve information for the company
+    - uses yfinance to return stock information on the company
+    - use of a json dictionary to provide file paths to the 'companies' folder in assets in order to retrieve information on the company
+    - also can create a path to the logo file for the company
+
+StateInfo
+    - given the name of a state, it will use the censusdata module to connect to an API to return the population of the state
+    - also uses a dictionary to return the GDP of the state from prewritten values
+
+Controller
+    - houses the main loop and event loop for the interactive map, allowing users to click and hover around to receive information
+
+### External Modules Used
+    - yFinance: in order to retrieve stock information
+    - censusData: in order to retrieve information on the populations of US states
 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  1                   | Run Counter Program  | GUI window appears with count = 0  |
 |  2                   | click count button   | display changes to count = 1      |
 etc...

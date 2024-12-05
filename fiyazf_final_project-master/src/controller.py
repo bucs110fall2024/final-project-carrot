@@ -143,6 +143,7 @@ class Controller:
                         if self.selectedCompanies:
                               shownCompanyTicker = self.selectedCompanies[self.currentCompanyIndex]
                               company = CompanyInfo(shownCompanyTicker)
+                              displayText(company.wikiOfCompany(), (10, 510), self.fontsize7)
                               displayText(company.name(), (970, 90), self.fontsize6)
                               displayText("CEO: " + company.CEO(), (968, 200), self.fontsize6)
                               displayText(shownCompanyTicker, (968, 120), self.fontsize3)

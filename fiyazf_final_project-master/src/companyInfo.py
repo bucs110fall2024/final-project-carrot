@@ -1,5 +1,6 @@
 import yfinance as yf
 import json
+import wikipedia
 
 class CompanyInfo:
     def __init__(self, tickerSymbol):
@@ -109,3 +110,8 @@ class CompanyInfo:
             if line.startswith("Company:"):
                 return line.replace("Company:", "").strip()
         return None
+    
+    def wikiOfCompany(self):
+        query = CompanyInfo.name(self) + " finance"
+        wikiSummary = wikipedia.summary(query, 5, 5)
+        return (wikiSummary [:98] + "...")
